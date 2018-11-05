@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>OpticaLuna</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+.thx{
+  position: fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom: 15px;
+}
+nav{
+  width: 100%;
+  position: fixed;
+  top:50px;
+  text-align:center;
+}
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#16151b;
+  margin:0 15px;
+  font-size:16px;
+  letter-spacing:5px;
+  position:relative;
+  display:inline-block;
+}
+nav a:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background:#16151b;
+  top:47%;
+  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before{
+  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }
+}
+</style>
+</head>
+<body background="images/1.jpg">
+
+
+ 
+
+
+
+<div class="back">  </div>
+ <nav>
+<img src="images/2.jpg" width="300" height="125"/>
+<br>
+  <a >¿Quienes somos?</a>
+  <a href='Ubicacion.html'>Tiendas </a>
+  <a href="catalogo.html">Catalogo</a>
+  <a href="citas.html">Citas</a>
+  <a href="#">Otros</a>
+
+<br>
+<br>
+
+<center>
+<table>
+
+<tr>
+  <td>
+<marquee onmouseover="stop()" onmouseout="start()" scrollamount="6" scrolldelay="50" direction="up">
+<img src="images/4.jpg"/>
+
+
+</MARQUEE>
+
+
+</td>
+<td>
+<marquee onmouseover="stop()" onmouseout="start()" scrollamount="6" scrolldelay="50" direction="up">
+<img src="images/3.jpg"/>
+
+
+</MARQUEE>
+
+</td>
+
+  <td>
+<marquee onmouseover="stop()" onmouseout="start()" scrollamount="6" scrolldelay="50" direction="up">
+<img src="images/4.jpg"/>
+
+
+</MARQUEE>
+
+
+</td>
+<td>
+
+<marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+  <marquee behavior="alternate">
+    <img src="images/3.jpg"/>
+
+
+</MARQUEE>
+
+</td>
+
+
+</tr>
+
+
+
+
+</table>
+</center>
+</nav>
+
+
+
+
+
+
+
+
+
+<a href='https://www.facebook.com/Optica-Luna-Zumpango-185811185193454/' target='_blank' title='Sígueme en Facebook'>
+<img src='images/image.png'style='display:scroll;position:fixed;bottom:20px;right:10px' alt=""width="50" height="60" />
+</a> 
+
+
+
+<a href='https://www.facebook.com/Optica-Luna-Zumpango-185811185193454/' target='_blank' title='Sígueme en Facebook'>
+<img src='images/7.png'style='display:scroll;position:fixed;bottom:75px;right:10px' alt="" width="50" height="60" />
+</a> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>
